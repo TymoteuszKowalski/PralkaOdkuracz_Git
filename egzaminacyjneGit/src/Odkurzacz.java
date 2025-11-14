@@ -1,15 +1,15 @@
-public class odkurzacz {
+public class Odkurzacz extends Urzadzenie{
     private boolean wlaczony = false;
     public void on() {
         if (!wlaczony) {
             wlaczony = true;
-            Main.komunikat("Odkurzacz włączono");
+            komunikat("Odkurzacz włączono");
         }
     }
     public void off() {
         if (wlaczony) {
             wlaczony = false;
-            Main.komunikat("Odkurzacz wyłączono");
+            komunikat("Odkurzacz wyłączono");
         }
     }
 }
